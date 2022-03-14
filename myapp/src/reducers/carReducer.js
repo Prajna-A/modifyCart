@@ -1,13 +1,13 @@
 const initialState = {
-    cartproducts: [],
+    cartProducts: [],
   };
   
   const cartReducer = (state = initialState, action) => {
     if (action.type === 'ADDPRODUCT') {
-      return { ...state, cartproducts: [...state.cartproducts, action.payload] };
+      return { ...state, cartProducts: [...state.cartProducts, action.payload] };
     }
     if (action.type === 'LESSPRODUCT') {
-      return { ...state, cartproducts: [...action.lessload] };
+      return { ...state, cartProducts: [...action.payload] };
     }
     if (action.type === 'reset') {
       return { ...initialState };

@@ -15,8 +15,8 @@ class App extends React.Component{
   render(){
     return(
       <Provider store={store}>
-         <div style={{border:'3px solid blue', margin:'5px', padding:'5px', backgroundColor:'lavender'}}>
-           <h1>GAMES STORE</h1>
+         <div style={{ backgroundColor:'black'}}>
+           <h1 style={{fontFamily:'fantasy',fontSize:'50px',color:'white',textAlign:'center'}}>GAMES STORE</h1>
            <Products/><br/>
            <Cart/>
            
